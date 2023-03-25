@@ -16,10 +16,6 @@ body{
     font-size: 0.9rem;
     font-family: 'Poppins', sans-serif;
     font-weight:400;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
   }
 
    /* loading-animation */
@@ -34,14 +30,13 @@ body{
 
 h1.heading{
     text-align: center;
-    color: rgb(61, 57, 57);
+    color: rgb(20, 20, 20);
     font-weight: 600;
     text-shadow: 2px 2px 1px rgb(235, 118, 126);
-    position: fixed;
-    top: 20px;
 } 
 .wrapper{
   padding: 5px;
+  margin-top:40px;
 }
 
 .details{
