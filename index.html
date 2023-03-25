@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- font-awesome-icon --> 
+   <script src="https://kit.fontawesome.com/a497a0fb12.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+    <title>Music Player</title>
+</head>
+<body>
+     <div class="loading-animation" id="loader"></div>
+     
+   <h1 class="heading">Music Player</h1>
+
+   <div class="wrapper">
+
+   <div id="details" class="details">
+    <p id="content" class="content"></p>
+   </div>
+    <div class="container" id="container">
+
+        <div class="header">
+            <p>Mp3 <spa class="player">Player</span> </p>
+            <p class="index">(<span id="current-song-index" class="player">2</span>/<span id="total-song">6</span>)</p>
+        </div>
+
+        <div class="music-cover">           
+            <div class="image-container">
+                <img src="images/three.jpg" alt="cover" id="cover">
+            </div>
+            
+        </div>
+       
+        <div class="music-info">
+           
+            <audio src="" id="audio"></audio>
+            <div class="description">
+                <div class="properties">    
+                  <h1 id="title">One Big Family</h>              
+                <h4 id="artist">Maher Zain</h4>
+                </div>
+                <div class="volume-container">
+                    <i class="fa-solid fa-volume-high mute"></i>
+                    <input type="range" class="volume" id="volume" min="0" max="100" value="50">
+                </div>
+                
+            </div>
+
+            <div class="controls"> 
+
+                    <div class="progress-container" id="progress-container">
+                    <div class="progress" id="progress"></div>
+                </div>
+                
+                <div class="duration">
+                    <p class="curent-time"></p>
+                    <p class="total-duration"></p>
+                </div>
+                 
+                 
+                <div class="navigation">
+
+                    <button id="shuffle" class="btn">
+                        <i class="fa-solid fa-shuffle"></i>
+                    </button>
+    
+                    <button class="btn" id="prev">
+                        <i class="fa-solid fa-backward"></i>
+                    </button>
+        
+                    <button class="btn btn-play" id="play">
+                        <i class="fa-solid fa-play" id="play-pause-icon"></i>
+                    </button>
+                    
+                    <button class="btn" id="next">
+                        <i class="fa-solid fa-forward"></i>
+                    </button>
+
+                    <button class="btn" id="loop" >
+                        <i class="repeats fa-solid fa-repeat"></i>
+                    </button>
+        
+                </div>
+            </div>
+        
+        </div>
+    </div>
+    </div>
+
+    <footer>
+        <p>This project was developed with the help of <a href="https://youtu.be/QTHRWGn_sJw">Tranversy Media</a></p>
+    </footer>
+</html>
